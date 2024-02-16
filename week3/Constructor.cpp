@@ -22,6 +22,12 @@ class Student
 int main()
 {
     Student venkat;
-    Student venkat01("SaiVenkat",86.789);
+    string name;
+    float val;
+    cout<<"Enter your name : ";
+    getline(cin,name);
+    cout<<"Enter your sem percentage : ";
+    cin>>val;
+    Student venkat01(name,val);
     return 0;
 }
