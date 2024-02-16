@@ -19,11 +19,16 @@ class Student
 int main()
 {
     Student venkat;
-    venkat.fullName="SaiVenkat";
-    venkat.rollNum=519;
-    venkat.semPerentage=85.478;
-    venkat.collegeName="Maharaj Vijayaram Gajapathi Raj College Of Engineering";
-    venkat.collegeCode=33;
+    cout<<"Enter your name : ";
+    getline(cin,venkat.fullName);
+    cout<<"Enter your roll number : ";
+    cin>>venkat.rollNum;
+    cout<<"Enter your sem percentage : ";
+    cin>>venkat.semPerentage;
+    cout<<"Enter your college name : ";
+    cin>>venkat.collegeName;
+    cout<<"Enter your college code : ";
+    cin>>venkat.collegeCode;
     cout<<"Name : "<<venkat.fullName<<endl;
     cout<<"RollNum : "<<venkat.rollNum<<endl;
     cout<<"SemPercentage : "<<venkat.semPerentage<<endl;
