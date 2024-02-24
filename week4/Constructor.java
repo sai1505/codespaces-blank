@@ -21,7 +21,9 @@ public class Constructor
     @SuppressWarnings("unused")
     Student venkat=new Student();
     Scanner input=new Scanner(System.in);
+    System.out.print("FullName : ");
     String fullName=input.nextLine();
+    System.out.print("SemPercentage : ");
     double semPercentage=input.nextDouble();
     input.close();
     @SuppressWarnings("unused")
