@@ -18,8 +18,8 @@ public class Constructor
   public static void main(String[] args)
   {
     @SuppressWarnings("unused")
-    Student vanitha=new Student();
+    Student venkat=new Student();
     @SuppressWarnings("unused")
-    Student vanitha01=new Student("G.Vanitha",98);
+    Student venkat01=new Student("B.SaiVenkat",92);
   }
 }
