@@ -27,6 +27,7 @@ class SuperClass
         }
 };
 
+//public  Inheritance
 class SubClass01: public SuperClass
 {
     public:
@@ -35,20 +36,24 @@ class SubClass01: public SuperClass
         int var3=gValp();
 };
 
+//private  Inheritance
 class SubClass02: private SuperClass
 {
     public:
-        int var01=gValpu();
-        int var02=gValpr();
+        int var01=publicVar;
+        int var02=protectedVar;
         int var03=gValp();
+
 };
 
+//protected  Inheritance
 class SubClass03: protected SuperClass
 {
     public:
         int var001=publicVar;
         int var002=protectedVar;
         int var003=gValp();
+
 };
 
 int main()
