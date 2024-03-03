@@ -58,6 +58,7 @@ class SubClass03: protected SuperClass
 
 int main()
 {
+    SuperClass obj;
     SubClass01 obj1;
     SubClass02 obj2;
     SubClass03 obj3;
@@ -66,6 +67,9 @@ int main()
     cout<<"Protected : "<<obj1.var2<<endl;
     cout<<"Private : "<<obj1.var3<<endl;
     cout<<"SubClass02\n";
+    /*cout<<"Public : "<<obj.publicVar<<endl;
+    cout<<"Protected : "<<obj.privateVar<<endl;
+    cout<<"Private : "<<obj.protectedVar<<endl;*/
     cout<<"Public : "<<obj2.var01<<endl;
     cout<<"Protected : "<<obj2.var02<<endl;
     cout<<"Private : "<<obj2.var03<<endl;
