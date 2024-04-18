@@ -19,8 +19,8 @@ public class FileStream {
                 while ((i=fin.read())!=-1) {
                     fout.write(i);
                 }
-                //fin.close();
-                //fout.close();
+                fin.close();
+                fout.close();
             } catch (IOException e) {
                 System.out.println("An error occured while performing input/.");
             }
