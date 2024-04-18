@@ -1,12 +1,8 @@
-/*Demonstrate handling built in exceptions 
-(Checked : FileNotFoundException, ClassNotFoundException, IOException, 
-InteruptedException; UnChecked : OutOfBoundsException, NullPointerException, 
-Arithmatic Exception)  in java. */
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class FileException  extends Thread{
+public class exceptionHandling extends Thread{
     @SuppressWarnings("null")
     public static void main(String[] args){
         
