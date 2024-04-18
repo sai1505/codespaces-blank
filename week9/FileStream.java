@@ -6,8 +6,8 @@ import java.io.File;
 
 public class FileStream {
     public static void main(String[] args) {
-        File f1=new File("/home/student/Desktop/22331A0519/fin.txt");
-        File f2=new File("/home/student/Desktop/22331A0519/fout.txt");
+        File f1=new File("/home/saivenkat/Documents/Programs/fin.txt");
+        File f2=new File("/home/saivenkat/Documents/Programs/fout.txt");
         FileInputStream fin;
         FileOutputStream fout;
         try{
@@ -19,10 +19,10 @@ public class FileStream {
                 while ((i=fin.read())!=-1) {
                     fout.write(i);
                 }
-                fin.close();
-                fout.close();
+                //fin.close();
+                //fout.close();
             } catch (IOException e) {
-                e.printStackTrace();
+                System.out.println("An error occured while performing input/.");
             }
         }catch(FileNotFoundException e){
             System.out.println("The File is not found here");
