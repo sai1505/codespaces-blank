@@ -2,19 +2,16 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.File;
 
 public class FileStream {
     public static void main(String[] args) {
-        File f1=new File("/home/saivenkat/Documents/Programs/fin.txt");
-        File f2=new File("/home/saivenkat/Documents/Programs/fout.txt");
-        FileInputStream fin;
-        FileOutputStream fout;
+        FileInputStream fin=null;
+        FileOutputStream fout=null;
         try{
-            fin=new FileInputStream(f1);
-            fout=new FileOutputStream(f2);
+            fin=new FileInputStream("/home/saivenkat/Documents/Programs/fin.txt");
+            fout=new FileOutputStream("/home/saivenkat/Documents/Programs/fout.txt");
             try {
-                System.out.println(fin.available());
+                System.out.println("Total Number of Bytes : "+fin.available());
                 int i;
                 while ((i=fin.read())!=-1) {
                     fout.write(i);
